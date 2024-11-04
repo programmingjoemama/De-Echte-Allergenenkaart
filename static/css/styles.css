@@ -1,0 +1,195 @@
+body {
+    margin: 0; 
+    padding: 0; 
+    background-image: url('/static/assets/bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: repeat; 
+    background-attachment: fixed; 
+}
+
+.container {
+    background-color: #fcfcfc;
+    width: 75%;
+    margin: 10% auto;
+    padding: 5%;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+    z-index: 1;
+}
+
+.top img {
+    width: 55%;
+}
+.underline-img img {
+    width: 100%;
+}
+
+.top {
+    font-size: 5vw;
+    font-weight: bold;
+
+}
+
+.top p {
+    margin-bottom: 0;
+    padding: 1%;
+    color: #F39C12;
+}
+
+
+
+#allergen-filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-filter {
+    padding: 10px 20px;
+    margin: 2%;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 45%;
+    background-color: #f0f0f0ff;
+    transition:  0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.vraag p {
+    font-size: 4vw;
+    padding-bottom: 1%;
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+
+.titel {
+    margin-bottom: 0;
+    color: #F39C12;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.titel p {
+    margin-bottom: 0;
+}
+
+.btn-filter img {
+    width: 50%;
+}
+
+.btn-filter.active {
+    background-color: rgb(189, 187, 187);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.btn-filter p {
+    font-size: 4vw;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    margin-bottom: 2%;
+    color: black;
+}
+
+.gerecht {
+    margin-top: 5%;
+    padding: 15px;
+    margin-bottom: 4%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    text-align: left;
+    display: flex;
+    align-items: flex start;
+    font-size: 2.5vw;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.gerecht h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.alert-btn {
+    display: none;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 40%;
+    height: auto;
+    margin-left: 5%;
+
+}
+
+
+.alert-btn:active {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Stijlen voor de alert-overlay */
+.alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparante achtergrond */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden; /* Verborgen standaard */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 9999;
+}
+
+/* Stijlen voor de alert box */
+.alert {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.alert h3 {
+    font-size: 1.5em;
+    color: orange;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.alert p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Als de overlay actief is */
+.alert-overlay.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+.undertext {
+    margin: 2% auto;
+    color: white;
+    text-align: center;
+    
+
+}
+
